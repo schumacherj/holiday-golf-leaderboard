@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+// $primary: mat-palette(#007AB4, 200);
+
+$custom-theme-blue: (
+    50 : #e0eff6,
+    100 : #b3d7e9,
+    200 : #80bdda,
+    300 : #4da2cb,
+    400 : #268ebf,
+    500 : #007ab4,
+    600 : #0072ad,
+    700 : #0067a4,
+    800 : #005d9c,
+    900 : #004a8c,
+    A100 : #b8d9ff,
+    A200 : #85bdff,
+    A400 : #52a1ff,
+    A700 : #3993ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$custom-theme-primary: mat-palette($custom-theme-blue);
+$custom-theme-accent:  mat-palette($mat-lime, 100);
+$custom-theme-warn:    mat-palette($mat-red);
+
+$custom-theme: mat-light-theme($custom-theme-primary, $custom-theme-accent, $custom-theme-warn);
+
+@include angular-material-theme($custom-theme);
