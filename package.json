@@ -27,7 +27,7 @@
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.14",
     "body-parser": "^1.17.2",
-    "express": "^4.15.3"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "@angular/cli": "^1.7.4",
